@@ -7,4 +7,6 @@ The dataset used in this project is the Dry Bean Dataset, which can be downloade
 **_Project Notebooks**_
 The notebooks directory is Google colab for detailed data exploration, preprocessing, and model training and evaluation. You can run these notebooks to get an in-depth understanding of each step in the project pipeline.
 **_Methodology**_
+GridSearchCV was used for the hyperparameter tuning of RF, XGB and SVC models. The addition of Dropout layer, Early stopping, L2 regularizer and increasing the epoch to 100 was used to fine tune the MLP model. The performance metrics used for the assessment of the models were accuracy, precision, recall, F1 score and confusion matrix. The permutation importance function from sklearn was used to evaluate the feature importance of the models.
 **_Results**_
+All the models achieved good results. The SVC model was the best 93.7% accuracy. The accuracy of MLP, XGB and RF models were 93.2%, 93.1% and 92.8% respectively. The important features contributing to models’ performance are roundness, compactness, shape_factor_4 and shape_factor_1.
